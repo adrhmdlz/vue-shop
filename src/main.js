@@ -4,9 +4,13 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'animate.css/animate.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faDollarSign } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faShoppingCart);
+library.add(faCartShopping, faDollarSign);
+
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.config.productionTip = false;
 
 Vue.config.productionTip = false;
 
